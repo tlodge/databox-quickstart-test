@@ -1,0 +1,39 @@
+{
+	"manifest-version": 1,
+
+	"name": "go-test-app",
+	"docker-image":"go-test-app",
+	"docker-registry":"databoxdev",
+	"docker-image-tag":"dev",
+	"databox-type": "app",
+	"version": "0.5.0",
+
+	"description": "An app that shows how to write a basic go app.",
+	"author": "Tosh Brown <Anthony.Brown@nottingham.ac.uk>",
+	"license": "MIT",
+	"tags": [
+		"test",
+		"app",
+		"databox"
+	],
+
+	"homepage": "https://github.com/me-box/databox-quickstart/",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/me-box/databox-quickstart/"
+	},
+	"datasources": [
+		{
+			"type": "databox-test:testdata",
+			"required": true,
+			"name": "databox-test:testdata",
+			"clientid": "testdata",
+			"granularities": []
+		}
+	],
+
+	"export-whitelist": [],
+
+	"resource-requirements": {}
+
+}
